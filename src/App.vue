@@ -1,6 +1,10 @@
 <template lang="pug">
   div#app
-    input-bezier
+    input-bezier(
+      lineStroke="#3F51B5"
+      v-model="value"
+    )
+    p {{ value }}
 </template>
 
 <script>
@@ -10,6 +14,11 @@ export default {
   name: 'App',
   components: {
     InputBezier
+  },
+  data () {
+    return {
+      value: ''
+    }
   }
 }
 </script>
@@ -19,7 +28,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
