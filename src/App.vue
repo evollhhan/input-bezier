@@ -1,6 +1,6 @@
 <template lang="pug">
   div#app
-    input-bezier(
+    input-bezier.component(
       lineStroke="#3F51B5"
       v-model="value"
     )
@@ -24,11 +24,21 @@ export default {
 </script>
 
 <style>
+body,
+html {
+  margin: 0;
+  background: #eee;
+  overflow: hidden;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.component {
+  margin-bottom: 40px;
 }
 </style>

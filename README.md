@@ -6,14 +6,34 @@ A Chrome-like vue component to generate cubic bezier value.
 
 ## usage
 
+```
+npm i --save input-bezier
+```
+
 ```html
 <!-- the value will be 'cubic-bezier(0, 0, 1, 1)' -->
-<input-bezier
-  v-model="value"
-  :lineStroke="'#f33'"
-  :ballStroke="'#f33'"
-  :ballFill="'#f33"
->
+<template>
+  <input-bezier
+    v-model="value"
+    :lineStroke="'#f33'"
+    :ballStroke="'#f33'"
+    :ballFill="'#f33"
+  >
+</template>
+
+<script>
+import inputBezier from 'input-bezier'
+export default {
+  components: {
+    inputBezier
+  },
+  data () {
+    return {
+      value: ''
+    }
+  }
+}
+</script>
 ```
 
 ## option

@@ -152,12 +152,13 @@ export default {
       if (this.itv) {
         clearInterval(this.itv)
       }
-      const { box } = this.$refs
+      const { box, cvs } = this.$refs
+      const sx = cvs.getBoundingClientRect().x
       this.preview.clear()
       this.preview.drawPoint(16)
       this.itv = setInterval(() => {
         const { x } = box.getBoundingClientRect()
-        this.preview.drawPoint(x)
+        this.preview.drawPoint(x - sx)
       }, 64)
     },
     onanimationend () {
@@ -217,7 +218,6 @@ export default {
 .bezier {
   position: relative;
   width: 260px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
   font-size: 15px;
@@ -228,6 +228,8 @@ export default {
   transition: ease;
   user-select: none;
   box-sizing: border-box;
+  box-shadow: 0 0 4px #ccc;
+  background: #fff;
 }
 
 .preview {
