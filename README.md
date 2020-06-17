@@ -1,6 +1,6 @@
 # Input Bezier
 
-A vue component to generate cubic bezier value.
+A Chrome-like vue component to generate cubic bezier value.
 
 ![](https://ftp.bmp.ovh/imgs/2020/06/61a58378f44e212d.gif)
 

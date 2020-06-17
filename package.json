@@ -1,7 +1,7 @@
 {
   "name": "input-bezier",
   "version": "1.0.0",
-  "description": "A chrome-like vue component to generate cubic bezier value.",
+  "description": "A Chrome-like vue component to generate cubic bezier value.",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
