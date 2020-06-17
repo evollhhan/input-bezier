@@ -1,6 +1,6 @@
 {
   "name": "input-bezier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tool to generate transiton bezier param.",
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -9,6 +9,10 @@
     "init": "npm install --registry=https://registry.npm.taobao.org",
     "build-lib": "vue-cli-service build --target lib --name inputBezier ./src/bezier/index.vue"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evollhhan/input-bezier.git"
