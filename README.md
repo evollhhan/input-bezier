@@ -1,24 +1,27 @@
-# project
+# Input Bezier
 
-## Project setup
-```
-npm install
-```
+A vue component to generate cubic bezier value.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![](https://ftp.bmp.ovh/imgs/2020/06/61a58378f44e212d.gif)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## usage
 
-### Lints and fixes files
-```
-npm run lint
+```html
+<!-- the value will be 'cubic-bezier(0, 0, 1, 1)' -->
+<input-bezier
+  v-model="value"
+  :lineStroke="'#f33'"
+  :ballStroke="'#f33'"
+  :ballFill="'#f33"
+>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## option
+
+```typescript
+interface InputBezierOption {
+  lineStroke: string;
+  ballStroke: string;
+  ballFill: string;
+}
+```
