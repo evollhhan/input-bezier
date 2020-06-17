@@ -1,0 +1,118 @@
+[
+  {
+    "name": "linear",
+    "value": "0,0,1,1"
+  },
+  {
+    "name": "ease-out",
+    "value": "0,0,.58,1"
+  },
+  {
+    "name": "ease",
+    "value": ".25,.1,.25,1"
+  },
+  {
+    "name": "ease-in",
+    "value": ".42,0,1,1"
+  },
+  {
+    "name": "ease-in-out",
+    "value": ".42,0,.58,1"
+  },
+  {
+    "name": "ease-in-sine",
+    "value": ".47, 0, .745, .715"
+  },
+  {
+    "name": "ease-out-sine",
+    "value": ".39, .575, .565, 1"
+  },
+  {
+    "name": "ease-in-out-sine",
+    "value": ".445, .05, .55, .95"
+  },
+  {
+    "name": "ease-in-quad",
+    "value": ".55, .085, .68, .53"
+  },
+  {
+    "name": "ease-out-quad",
+    "value": ".25, .46, .45, .94"
+  },
+  {
+    "name": "ease-in-out-quad",
+    "value": ".455, .03, .515, .955"
+  },
+  {
+    "name": "ease-in-cubic",
+    "value": ".55, .055, .675, .19"
+  },
+  {
+    "name": "ease-out-cubic",
+    "value": ".215, .61, .355, 1"
+  },
+  {
+    "name": "ease-in-out-cubic",
+    "value": ".645, .045, .355, 1"
+  },
+  {
+    "name": "ease-in-quart",
+    "value": ".895, .03, .685, .22"
+  },
+  {
+    "name": "ease-out-quart",
+    "value": ".165, .84, .44, 1"
+  },
+  {
+    "name": "ease-in-out-quart",
+    "value": ".77, 0, .175, 1"
+  },
+  {
+    "name": "ease-in-quint",
+    "value": ".755, .05, .855, .06"
+  },
+  {
+    "name": "ease-out-quint",
+    "value": ".23, 1, .32, 1"
+  },
+  {
+    "name": "ease-in-out-quint",
+    "value": ".86, 0, .07, 1"
+  },
+  {
+    "name": "ease-in-expo",
+    "value": ".95, .05, .795, .035"
+  },
+  {
+    "name": "ease-out-expo",
+    "value": ".19, 1, .22, 1"
+  },
+  {
+    "name": "ease-in-out-expo",
+    "value": "1, 0, 0, 1"
+  },
+  {
+    "name": "ease-in-circ",
+    "value": ".6, .04, .98, .335"
+  },
+  {
+    "name": "ease-out-circ",
+    "value": ".075, .82, .165, 1"
+  },
+  {
+    "name": "ease-in-out-circ",
+    "value": ".785, .135, .15, .86"
+  },
+  {
+    "name": "ease-in-back",
+    "value": ".6, -.28, .735, .045"
+  },
+  {
+    "name": "ease-out-back",
+    "value": ".175, .885, .32, 1.275"
+  },
+  {
+    "name": "ease-in-out-back",
+    "value": ".68, -.55, .265, 1.55"
+  }
+]

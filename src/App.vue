@@ -1,17 +1,15 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  div#app
+    input-bezier
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InputBezier from './bezier'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    InputBezier
   }
 }
 </script>
