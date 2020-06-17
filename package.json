@@ -1,6 +1,6 @@
 {
   "name": "input-bezier",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A tool to generate transiton bezier param.",
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -17,6 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/evollhhan/input-bezier.git"
   },
+  "keywords": [
+    "bezier",
+    "chrome",
+    "input",
+    "selector"
+  ],
   "author": "Pathen",
   "license": "MIT",
   "dependencies": {
