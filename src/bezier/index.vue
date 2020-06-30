@@ -106,8 +106,8 @@ export default {
   },
   data () {
     return {
-      p1: { x: 0, y: 20 },
-      p2: { x: 40, y: 20 },
+      p1: { x: 0, y: 100 },
+      p2: { x: 100, y: 0 },
       animated: false,
       examples: [
         'easeout',
@@ -144,7 +144,7 @@ export default {
     }
   },
   mounted () {
-    this.onselect()
+    this.init()
     this.preview = new Preview(this.$refs.cvs, this.lineStroke)
   },
   methods: {
@@ -209,6 +209,20 @@ export default {
       this.p1.y = 100 - y1 * 100
       this.p2.x = x2 * 100
       this.p2.y = 100 - y2 * 100
+    },
+    init () {
+      if (this.value) {
+        // 获得例如 0,0,1,1 这样的序列后做匹配
+        const res = this.value.match(/-?\d\.?\d?\d?/g).map(v => v.trim().replace('0.', '.')).join(',')
+        const idx = presets.findIndex(item => item.value === res)
+        if (idx > -1) {
+          this.onselect(idx)
+        } else {
+          this.update(res)
+        }
+      } else {
+        this.onselect()
+      }
     }
   }
 }
